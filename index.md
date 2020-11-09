@@ -56,7 +56,7 @@ The server side is based on a [Node-RED](https://nodered.org/) instance along wi
 
 The infrastructure consists of one general proxy/auth instance, and as many local farm instances as there are separate farms.
 
-![infra schema](https://github.com/airliquide/airliquide.github.io/images/infra.png "General infrastucture")
+![infra schema](https://github.com/AirLiquide/airliquide.github.io/blob/main/images/infra.png "General infrastucture")
 
 ### Entry point
 
