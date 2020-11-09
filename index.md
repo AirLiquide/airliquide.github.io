@@ -1,7 +1,7 @@
 Air Liquide Open Source projects
 ---
 
-# Predictable Farm -  Proof Of Concept
+# Predictable Farm -  Proof Of Concept - 2017
 
 ## Introduction
 
@@ -9,7 +9,7 @@ Predictable Farm is a connected farm system Proof Of Concept that allows to run 
 
 This system has been tested during two year on an aquaponic farm to challenge traditional automation systems using PLCs in term of user experience, reliability and pricing.
 This Proof Of Concept has never gone to production phase because of the lack of reliability of field device sensors (calibration issues) and actuators (high power relay generating ECM disturbing ethernet PoE channel on our design) but may be adapted to run on more appropriate field devices or just for hobyist projects at home.
-During this Proof Of Concept, Air Liquide digital teams developped somes interresting add-ons, that may be usefull as starting point for other projects and are therefore shared on this Github group. You may especially have a look to the way we integrated third party dashboard with [node-red](https://nodered.org/), enalbled [BOOST](https://www.highcharts.com/docs/advanced-chart-features/boost-module) library to help handled several thousand of data on JS chart libraries without any lag,  time series database Cassandra to store all sensors events in real time, or the offline strategy generator to deploy IBM node red flow (recipe) directly into field devices, or very simple device management based on remote firmware update and remote ssh tunnels. 
+During this Proof Of Concept, Air Liquide digital teams developped somes interresting add-ons, that may be usefull as starting point for other projects and are therefore shared on this Github group. You may especially have a look to the way we integrated third party dashboard with [node-red](https://nodered.org/), enalbled [BOOST](https://www.highcharts.com/docs/advanced-chart-features/boost-module) library to help handled several thousand of data on JS chart libraries without any lag,  time series database Cassandra to store all sensors events in real time, or the offline strategy generator to deploy node red flow (recipe) directly into field devices, or very simple device management based on remote firmware update and remote ssh tunnels. 
 
 The following repositories belong to the Predictable Farm Project : 
 
