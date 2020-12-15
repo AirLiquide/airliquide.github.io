@@ -15,27 +15,27 @@ The following repositories belong to the Predictable Farm Project :
 
 **Embedded device software** :
 
-  - [predictable.farm.embedded-software.os - yocto Linux on Siemens IOT2040 ](https://github.com/airliquide/predictable.farm.embedded-software.os)
-  - [predictable.farm.embedded-software - nodejs set of processes running on Siemens IOT2040 with event orchestration using websockets and sensor connectivity with libMRAA](https://github.com/airliquide/predictable.farm.embedded-software)
-  - [predictable.farm.embedded-software.offline-strategy-generator - nodejs code to decode IBM node-red flows generated in the cloud and published over websocket to the target](https://github.com/airliquide/predictable.farm.embedded-software.offline-strategy-generator)
-  - [predictable.farm.embedded-software.sensor-simulator - node js sensor simulation using websockets](https://github.com/airliquide/predictable.farm.embedded-software.sensor-simulator)
+  - [predictable.farm.embedded-software.os](https://github.com/airliquide/predictable.farm.embedded-software.os) - yocto Linux on Siemens IOT2040
+  - [predictable.farm.embedded-software ](https://github.com/airliquide/predictable.farm.embedded-software) - nodejs set of processes running on Siemens IOT2040 with event orchestration using websockets and sensor connectivity with libMRAA
+  - [predictable.farm.embedded-software.offline-strategy-generator](https://github.com/airliquide/predictable.farm.embedded-software.offline-strategy-generator) - nodejs code to decode IBM node-red flows generated in the cloud and published over websocket to the target
+  - [predictable.farm.embedded-software.sensor-simulator](https://github.com/airliquide/predictable.farm.embedded-software.sensor-simulator) - node js sensor simulation using websockets
 
 **General instance** :
 
-  - [predictable.farm.proxy - redbird nodejs proxy](https://github.com/airliquide/predictable.farm.proxy)
-  - [predictable.farm.authentication-bridge - sqlite + react web app ](https://github.com/airliquide/predictable.farm.authentication-bridge)
+  - [predictable.farm.proxy](https://github.com/airliquide/predictable.farm.proxy) - redbird nodejs proxy
+  - [predictable.farm.authentication-bridge](https://github.com/airliquide/predictable.farm.authentication-bridge) - sqlite + react web app 
 
 **Local instances** (farms) :
 
-  - [predictable.farm.cassandra - high performance real time event historian using this nosql db](https://github.com/airliquide/predictable.farm.cassandra)
-  - [predictable.farm.automation-engine - customisation of IBM node-red 1.0 (custom UI, custom nodes for sensors, actuators and maths, conenctivity to cassandra db and custom dasboard app) ](https://github.com/airliquide/predictable.farm.automation-engine)
-  - [predictable.farm.dashboard - a custom web application using mustachejs , highchart js + boost , cassandra db access ](https://github.com/airliquide/predictable.farm.dashboard)
+  - [predictable.farm.cassandra](https://github.com/airliquide/predictable.farm.cassandra) - high performance real time event historian using this nosql db
+  - [predictable.farm.automation-engine](https://github.com/airliquide/predictable.farm.automation-engine) - customisation of IBM node-red 1.0 (custom UI, custom nodes for sensors, actuators and maths, conenctivity to cassandra db and custom dasboard app) 
+  - [predictable.farm.dashboard](https://github.com/airliquide/predictable.farm.dashboard) - a custom web application using mustachejs , highchart js + boost , cassandra db access 
 
 **Utilities** :
 
-  - [predictable.farm.mirror.client - on embedded device side : websocket listener + ssh ](https://github.com/airliquide/predictable.farm.mirror.client)
-  - [predictable.farm.mirror.server - on the cloud - ssh tunnel management](https://github.com/airliquide/predictable.farm.mirror.server)
-  - [predictable.farm.mirror.webapp - on the cloud ssh tunnel monitoring and generator thanks to websocket and online ssh terminal ](https://github.com/airliquide/predictable.farm.mirror.webapp)
+  - [predictable.farm.mirror.client](https://github.com/airliquide/predictable.farm.mirror.client) - on embedded device side : websocket listener + ssh 
+  - [predictable.farm.mirror.server](https://github.com/airliquide/predictable.farm.mirror.server) - on the cloud - ssh tunnel management
+  - [predictable.farm.mirror.webapp](https://github.com/airliquide/predictable.farm.mirror.webapp) - on the cloud ssh tunnel monitoring and generator thanks to websocket and online ssh terminal 
 
 
 ### Technical stack
@@ -80,3 +80,9 @@ In case the connection is made through a websocket, or if the requested resource
 ## License
 
 Predictable Farm is licensed under the MIT. A copy of the license and the relevant copyright headers are present in every repository.
+
+## Project status
+
+The project has been used has a POC to test different technlogies and is not in operation internally since underlaying electronics designs was not reliable enough compare to standard PLCs for industrial environement. However many of those technology bricks remains interresting and suitable for a proof of concept and more ( IBM node-red, websocket TLS, yocto Linux, Cassandra). The team was specially proud of the offine strategy generator service running on the embedded software, getting its rules from the standard IBM node red instance, capturing the flows (rules) in JSON format, sending them over websocket and interpretting them locally in case of Internet access issue, or the dashboard connectivity to cassandra database, representation of results with highchartjs and BOOST add-on to handle close to a million data points almost in realtime, without any lag. So fill free to fork the projects or contribute.
+
+
